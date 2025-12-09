@@ -1,0 +1,140 @@
+
+### **4. সম্পূর্ণ `install.sh` আপডেট করুন:**
+
+```bash
+#!/bin/bash
+# Termux installation script for Tempro Bot
+# Direct from GitHub: master-pd/tempro
+
+echo "================================================"
+echo "     TEMPRO BOT - GitHub Installation"
+echo "     Repository: github.com/master-pd/tempro"
+echo "================================================"
+echo ""
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# Function to print colored messages
+print_message() {
+    echo -e "${GREEN}[+]${NC} $1"
+}
+
+print_error() {
+    echo -e "${RED}[!]${NC} $1"
+}
+
+print_warning() {
+    echo -e "${YELLOW}[*]${NC} $1"
+}
+
+# Check if running in Termux
+if [ -d "/data/data/com.termux/files/usr" ]; then
+    IS_TERMUX=true
+    print_message "Termux environment detected"
+else
+    IS_TERMUX=false
+    print_warning "Not running in Termux. Some features may not work."
+fi
+
+# Step 1: Update packages
+print_message "Step 1: Updating system packages..."
+if [ "$IS_TERMUX" = true ]; then
+    pkg update -y && pkg upgrade -y
+else
+    sudo apt-get update && sudo apt-get upgrade -y
+fi
+
+# Step 2: Install Python
+print_message "Step 2: Installing Python..."
+if [ "$IS_TERMUX" = true ]; then
+    pkg install python -y
+    pkg install git -y
+else
+    sudo apt-get install python3 python3-pip git -y
+fi
+
+# Step 3: Clone repository
+print_message "Step 3: Cloning repository from GitHub..."
+if [ -d "tempro" ]; then
+    print_warning "Repository already exists. Updating..."
+    cd tempro
+    git pull origin main
+else
+    git clone https://github.com/master-pd/tempro.git
+    cd tempro
+fi
+
+# Step 4: Install dependencies
+print_message "Step 4: Installing Python dependencies..."
+pip install --upgrade pip
+
+# Check and install requirements
+if [ -f "requirements.txt" ]; then
+    pip install -r requirements.txt
+else
+    print_error "requirements.txt not found!"
+    exit 1
+fi
+
+# Step 5: Run setup
+print_message "Step 5: Running setup script..."
+if [ -f "setup.py" ]; then
+    python setup.py
+else
+    print_warning "setup.py not found. Creating basic structure..."
+    
+    # Create basic structure
+    mkdir -p logs data backups temp assets
+    
+    # Create .env example
+    echo "# Bot Configuration" > .env.example
+    echo "BOT_TOKEN=your_bot_token_here" >> .env.example
+    echo "ADMIN_ID=your_admin_id" >> .env.example
+    
+    print_message "Basic structure created"
+fi
+
+# Step 6: Make scripts executable
+print_message "Step 6: Making scripts executable..."
+chmod +x install.sh
+if [ -f "main.py" ]; then
+    chmod +x main.py
+fi
+
+# Step 7: Display completion message
+echo ""
+echo "================================================"
+echo "          INSTALLATION COMPLETED!              "
+echo "================================================"
+echo ""
+echo "🌐 Repository: https://github.com/master-pd/tempro"
+echo ""
+echo "📋 NEXT STEPS:"
+echo "1. Get bot token from @BotFather on Telegram"
+echo "2. Configure the bot:"
+echo "   cp .env.example .env"
+echo "   nano .env"
+echo "3. Add your bot token to .env file:"
+echo "   BOT_TOKEN=your_actual_token_here"
+echo "4. Run the bot:"
+echo "   python main.py"
+echo ""
+echo "📱 TERMUX USERS:"
+echo "- Run in background:"
+echo "  nohup python main.py &"
+echo "- Check logs:"
+echo "  tail -f logs/bot.log"
+echo "- Stop bot:"
+echo "  pkill -f main.py"
+echo ""
+echo "❓ NEED HELP?"
+echo "- Check docs: https://github.com/master-pd/tempro"
+echo "- Create issue on GitHub"
+echo "- Read assets/instructions.txt"
+echo ""
+echo "================================================"
+print_message "Thank you for installing Tempro Bot! 🚀"
