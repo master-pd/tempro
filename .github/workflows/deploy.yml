@@ -1,0 +1,35 @@
+name: Deploy Tempro Bot
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run tests
+      run: |
+        python -c "import sys; print('Python version:', sys.version)"
+        python -c "import telegram; print('Telegram bot version:', telegram.__version__)"
+    
+    - name: Deploy to Termux (Manual)
+      run: |
+        echo "🚀 Deployment ready!"
+        echo "For Termux, use: bash <(curl -s https://raw.githubusercontent.com/master-pd/tempro/main/install.sh)"
