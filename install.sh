@@ -40,8 +40,8 @@ if [ -d "tempro-pro-bot" ]; then
     cd tempro-pro-bot
     git pull
 else
-    git clone https://github.com/yourusername/tempro-pro-bot.git
-    cd tempro-pro-bot
+    git clone https://github.com/master-pd/tempro.git
+    cd tempro
 fi
 
 # Install Python dependencies
