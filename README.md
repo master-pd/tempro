@@ -13,6 +13,28 @@
 
 </div>
 
+
+<div align="center">
+
+![Tempro Bot Banner](https://img.shields.io/badge/Tempro-Pro_Bot-blueviolet)
+![Version](https://img.shields.io/badge/Version-3.1.0-success)
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Telegram](https://img.shields.io/badge/Telegram-Bot-2CA5E0)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+![GitHub](https://img.shields.io/github/license/master-pd/tempro)
+![GitHub last commit](https://img.shields.io/github/last-commit/master-pd/tempro)
+![GitHub issues](https://img.shields.io/github/issues/master-pd/tempro)
+![GitHub stars](https://img.shields.io/github/stars/master-pd/tempro)
+![GitHub forks](https://img.shields.io/github/forks/master-pd/tempro)
+
+**প্রফেশনাল টেম্পোরারি ইমেইল টেলিগ্রাম বট**  
+*বাংলা ইন্টারফেস - ইংলিশ টার্মিনাল*
+
+[🏠 Home](#-tempro-pro-bot) • [🚀 Installation](#-installation) • [📁 Structure](#-project-structure) • [📊 Diagrams](#-architecture-diagrams) • [💡 Usage](#-usage)
+
+</div>
+
 ---
 
 ## 📋 **বিষয়সূচি**
