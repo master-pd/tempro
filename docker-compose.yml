@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  tempro-bot:
+    build: .
+    container_name: tempro-bot
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./backups:/app/backups
+      - ./temp:/app/temp
+      - ./config:/app/config
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Dhaka
+      - PYTHONUNBUFFERED=1
+    networks:
+      - tempro-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; print('Health check passed')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  tempro-network:
+    driver: bridge
+
+volumes:
+  tempro-data:
+  tempro-backups:
+  tempro-logs:

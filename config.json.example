@@ -1,70 +1,29 @@
 {
-  "bot_token": "YOUR_BOT_TOKEN_HERE",
-  "admin_id": "YOUR_ADMIN_ID_HERE",
-  "bot_mode": "full",
-  "database": {
-    "path": "data/tempro_bot.db",
-    "backup_interval": 3600,
-    "cleanup_interval": 300
-  },
-  "api": {
-    "base_url": "https://www.1secmail.com/api/v1/",
-    "timeout": 15,
-    "retry_attempts": 3
-  },
   "bot": {
-    "rate_limit_per_user": 10,
-    "rate_limit_per_minute": 30,
-    "max_emails_per_user": 5,
-    "auto_delete_after": 86400,
-    "notify_new_emails": true
+    "name": "Tempro Bot",
+    "version": "2.0.0",
+    "mode": "normal",
+    "maintenance_message": "🛠️ বটটি রক্ষণাবেক্ষণের কাজ চলছে। কিছুক্ষণ পর আবার চেষ্টা করুন।",
+    "welcome_message": "🎉 স্বাগতম Tempro Bot এ!\n\nএখানে আপনি মুহূর্তেই ফ্রি টেম্পোরারি ইমেইল তৈরি করতে পারবেন।",
+    "help_message": "🤖 **Tempro Bot - সাহায্য**\n\n🔹 /start - বট শুরু করুন\n🔹 /newemail - নতুন ইমেইল তৈরি করুন\n🔹 /myemails - আমার ইমেইলগুলো দেখুন\n🔹 /inbox - ইমেইল চেক করুন\n🔹 /help - সাহায্য\n🔹 /about - বট সম্পর্কে\n\n⚡ 1secmail API ব্যবহার করে রিয়েল টেম্পোরারি ইমেইল তৈরি করা হয়।"
   },
-  "logging": {
-    "level": "INFO",
-    "file": "logs/bot.log",
-    "max_size_mb": 10,
-    "backup_count": 5
-  },
-  "features": {
-    "premium_enabled": false,
-    "auto_check_interval": 300,
-    "email_notifications": true,
-    "inline_previews": true,
-    "verification_required": true,
-    "social_links_enabled": true
+  "owner": {
+    "id": 123456789,
+    "username": "@owner_username"
   },
   "channels": {
-    "required": [
-      {
-        "id": "@tempro_bot_updates",
-        "name": "📢 অফিসিয়াল চ্যানেল",
-        "url": "https://t.me/tempro_bot_updates",
-        "description": "সর্বশেষ আপডেট এবং ঘোষণা",
-        "required": true
-      },
-      {
-        "id": "@tempro_support_group",
-        "name": "👥 সাপোর্ট গ্রুপ",
-        "url": "https://t.me/tempro_support_group",
-        "description": "সহায়তা এবং প্রশ্নোত্তর",
-        "required": true
-      }
-    ]
+    "required": true,
+    "check_subscription": true
   },
-  "social_links": {
-    "telegram_channel": "https://t.me/tempro_bot_updates",
-    "telegram_group": "https://t.me/tempro_support_group",
-    "youtube": "https://youtube.com/@tempro_bot",
-    "facebook": "https://facebook.com/tempro.bot",
-    "tiktok": "https://tiktok.com/@tempro.bot",
-    "github": "https://github.com/yourusername/tempro-bot",
-    "website": "https://tempro-bot.dev"
+  "features": {
+    "email_expiry_hours": 1,
+    "max_emails_per_user": 10,
+    "inbox_check_interval": 30,
+    "auto_delete_old_emails": true
   },
   "pirjada_mode": {
-    "single_channel": "@tempro_basic_channel",
-    "limited_features": true,
-    "custom_name": "পীরজাদা বট",
-    "max_users": 100,
-    "daily_limit": 50
+    "enabled": true,
+    "max_channels": 1,
+    "max_links": 3
   }
 }

@@ -1,104 +1,46 @@
-# 🌟 Tempro Pro Bot v4.0.0
+# 🚀 Tempro Bot - Telegram Temporary Email Generator
 
+![Version](https://img.shields.io/badge/version-2.0.0-blue)
+![Python](https://img.shields.io/badge/python-3.9%2B-green)
+![License](https://img.shields.io/badge/license-MIT-yellow)
+![Telegram](https://img.shields.io/badge/telegram-bot-blue)
 
-<div align="center">
+A feature-rich Telegram bot for generating temporary emails using 1secmail API. Includes Pirjada system for creating sub-bots.
 
-![Tempro Bot Banner](https://img.shields.io/badge/Tempro-Pro_Bot-blueviolet)
-![Version](https://img.shields.io/badge/Version-3.1.0-success)
-![Python](https://img.shields.io/badge/Python-3.8+-blue)
-![Telegram](https://img.shields.io/badge/Telegram-Bot-2CA5E0)
-![License](https://img.shields.io/badge/License-MIT-green)
-![API](https://img.shields.io/badge/API-1secmail.com-orange)
+## ✨ Features
 
-![GitHub](https://img.shields.io/github/license/master-pd/tempro)
-![GitHub last commit](https://img.shields.io/github/last-commit/master-pd/tempro)
-![GitHub issues](https://img.shields.io/github/issues/master-pd/tempro)
-![GitHub stars](https://img.shields.io/github/stars/master-pd/tempro)
-![GitHub forks](https://img.shields.io/github/forks/master-pd/tempro)
+### 🎯 Core Features
+- ✅ **Real Temporary Emails** using 1secmail API
+- ✅ **Email Inbox Viewer** - View received emails in Telegram
+- ✅ **Auto-expiry** - Emails expire after 1 hour
+- ✅ **Multiple Emails** - Create up to 10 emails per user
+- ✅ **Rate Limiting** - Prevent abuse
+- ✅ **Multi-language** - Bengali & English support
 
-**প্রফেশনাল টেম্পোরারি ইমেইল টেলিগ্রাম বট**  
-*বাংলা ইন্টারফেস - ইংলিশ টার্মিনাল*
+### 🤖 Advanced Features
+- ✅ **Pirjada System** - Users can create their own bots
+- ✅ **Channel Verification** - Force users to join channels
+- ✅ **Admin Panel** - Full control for admins
+- ✅ **Statistics** - Detailed usage analytics
+- ✅ **Broadcast System** - Send messages to all users
+- ✅ **Auto Backup** - Daily database backups
+- ✅ **Maintenance Mode** - Temporarily disable bot
 
-[🏠 Home](#-tempro-pro-bot) • [🚀 Installation](#-installation) • [📁 Structure](#-project-structure) • [📊 Diagrams](#-architecture-diagrams) • [💡 Usage](#-usage)
+### 🔗 Social Integration
+- Telegram Group & Channel buttons
+- YouTube, TikTok, Facebook links
+- Owner profile link
+- Support team link
+- GitHub repository
 
-</div>
+## 🚀 Quick Start
 
----
+### Prerequisites
+- Python 3.9 or higher
+- Telegram Bot Token (from @BotFather)
+- Basic terminal knowledge
 
-## 📋 **বিষয়সূচি**
-
-| বিভাগ | বর্ণনা |
-|-------|---------|
-| [🎯 বৈশিষ্ট্য](#-বৈশিষ্ট্য) | সকল ফিচারের তালিকা |
-| [🚀 ইন্সটলেশন](#-ইন্সটলেশন) | কিভাবে ইন্সটল করবেন |
-| [⚙️ কনফিগারেশন](#️-কনফিগারেশন) | বট সেটআপ গাইড |
-| [🤖 বট মোড](#-বট-মোড) | ফুল এবং পীরজাদা মোড |
-| [📱 ব্যবহার](#-ব্যবহার) | ইউজার গাইড |
-| [🔗 লিংক সিস্টেম](#-লিংক-সিস্টেম) | সকল লিংক ব্যবস্থাপনা |
-| [🛡️ ভেরিফিকেশন](#️-ভেরিফিকেশন) | চ্যানেল ভেরিফিকেশন |
-| [👨‍💼 অ্যাডমিন](#-অ্যাডমিন) | অ্যাডমিন প্যানেল |
-| [📊 ডাটাবেজ](#-ডাটাবেজ) | ডাটা ব্যবস্থাপনা |
-| [🔄 API](#-api) | 1secmail.com API |
-| [🐛 সমস্যা সমাধান](#-সমস্যা-সমাধান) | সাধারণ সমস্যা |
-
----
-
-## 🎯 **বৈশিষ্ট্য**
-
-### **✨ কোর ফিচারস**
-
-- **📧 রিয়েল ইমেইল সার্ভিস**: 1secmail.com API ব্যবহার করে
-- **🌐 ডুয়াল মোড সিস্টেম**: ফুল মোড এবং পীরজাদা মোড
-- **🔗 সম্পূর্ণ লিংক সিস্টেম**: সকল সোশ্যাল মিডিয়া লিংক
-- **✅ চ্যানেল ভেরিফিকেশন**: বট ব্যবহারের পূর্বে চ্যানেল জয়েন
-- **📊 ইউজার স্ট্যাটিস্টিক্স**: বিস্তারিত ব্যবহার পরিসংখ্যান
-- **🛡️ রেট লিমিটিং**: ইউজার এবং গ্লোবাল রেট লিমিট
-- **💾 ক্যাশ সিস্টেম**: দ্রুত রেসপন্সের জন্য ক্যাশিং
-- **🔔 নোটিফিকেশন**: স্বয়ংক্রিয় নোটিফিকেশন সিস্টেম
-- **🧹 অটো ক্লিনআপ**: ২৪ ঘন্টা পর ইমেইল ডিলিট
-
-### **🔗 লিংক এবং সোশ্যাল মিডিয়া**
-
-| প্ল্যাটফর্ম | লিংক | বর্ণনা |
-|------------|------|---------|
-| **টেলিগ্রাম চ্যানেল** | @tempro_bot_updates | অফিসিয়াল আপডেট |
-| **টেলিগ্রাম গ্রুপ** | @tempro_support_group | সাপোর্ট গ্রুপ |
-| **YouTube** | @tempro_bot | টিউটোরিয়াল ভিডিও |
-| **Facebook** | facebook.com/tempro.bot | ফেসবুক পেজ |
-| **TikTok** | tiktok.com/@tempro.bot | TikTok প্রোফাইল |
-| **GitHub** | github.com/yourusername/tempro-bot | সোর্স কোড |
-| **ওয়েবসাইট** | tempro-bot.dev | অফিসিয়াল ওয়েবসাইট |
-
-### **🤖 বট কমান্ডস**
-
-| কমান্ড | বর্ণনা | উদাহরণ |
-|--------|---------|---------|
-| `/start` | বট শুরু করুন | `/start` |
-| `/get` | নতুন ইমেইল তৈরি | `/get` |
-| `/check` | ইমেইল চেক করুন | `/check test@1secmail.com` |
-| `/read` | ইমেইল পড়ুন | `/read test@1secmail.com 12345` |
-| `/links` | সকল লিংক দেখুন | `/links` |
-| `/stats` | আপনার পরিসংখ্যান | `/stats` |
-| `/admin` | অ্যাডমিন প্যানেল | `/admin` |
-| `/help` | সাহায্য পান | `/help` |
-
----
-
-## 🚀 **ইন্সটলেশন**
-
-### **🖥️ Linux/Windows/macOS**
-
+### Method 1: Easy Installation (Termux)
 ```bash
-# 1. Clone repository
-git clone https://github.com/master-pd/tempro.git
-cd tempro-bot
-
-# 2. Run installation script
-bash install.sh
-
-# 3. Configure bot
-cp .env.example .env
-nano .env  # Add your bot token
-
-# 4. Run bot
-python main.py
+# Run this command in Termux
+bash <(curl -s https://raw.githubusercontent.com/master-pd/tempro/main/termux-install.sh)

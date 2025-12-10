@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tempro-bot"
+version = "2.0.0"
+description = "Telegram Bot for Temporary Email Generation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "MAR PD ", email = "mdranasheikhe2005@gmail.com"}
+]
+
+[project.urls]
+Homepage = "https://github.com/master-pd/tempro"
+Repository = "https://github.com/master-pd/tempro.git"
+
+[project.scripts]
+tempro-bot = "src.main:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 88
