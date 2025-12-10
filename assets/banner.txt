@@ -1,0 +1,20 @@
+╔══════════════════════════════════════════════════╗
+║            🚀 TEMPRO BOT v2.0.0 🚀              ║
+║        Telegram Temporary Email Generator        ║
+║            100% Working • Advanced               ║
+║                                                  ║
+║   ✨ Features:                                   ║
+║   ✅ Real Temporary Emails                       ║
+║   ✅ 1secmail API Integration                    ║
+║   ✅ Email Inbox Viewer                          ║
+║   ✅ Pirjada Bot Creation System                 ║
+║   ✅ Channel Verification                        ║
+║   ✅ Multi-language Support                      ║
+║   ✅ Admin Panel & Statistics                    ║
+║   ✅ Auto Backup & Maintenance                   ║
+║                                                  ║
+║   👑 Owner: @tempro_owner                       ║
+║   📢 Channel: @tempro_updates                   ║
+║   👥 Support: @tempro_support                   ║
+║   💻 GitHub: github.com/master-pd/tempro        ║
+╚══════════════════════════════════════════════════╝
