@@ -1,0 +1,50 @@
+{
+  "super_admins": [123456789],
+  "admins": [987654321, 555555555],
+  "moderators": [111111111, 222222222],
+  "permissions": {
+    "broadcast": {
+      "super_admins": true,
+      "admins": true,
+      "moderators": false
+    },
+    "maintenance": {
+      "super_admins": true,
+      "admins": false,
+      "moderators": false
+    },
+    "user_management": {
+      "super_admins": true,
+      "admins": true,
+      "moderators": true
+    },
+    "pirjada_management": {
+      "super_admins": true,
+      "admins": true,
+      "moderators": false
+    },
+    "stats_view": {
+      "super_admins": true,
+      "admins": true,
+      "moderators": true
+    },
+    "backup": {
+      "super_admins": true,
+      "admins": false,
+      "moderators": false
+    },
+    "logs_view": {
+      "super_admins": true,
+      "admins": true,
+      "moderators": false
+    }
+  },
+  "settings": {
+    "admin_password": "admin123",
+    "moderator_password": "mod123",
+    "login_expiry_hours": 24,
+    "max_login_attempts": 3,
+    "require_2fa": false,
+    "activity_logging": true
+  }
+}

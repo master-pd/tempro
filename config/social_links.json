@@ -1,0 +1,46 @@
+{
+  "telegram": {
+    "group": "https://t.me/tempro_support",
+    "channel": "https://t.me/tempro_updates",
+    "owner": "https://t.me/tempro_owner",
+    "developer": "https://t.me/tempro_dev",
+    "news": "https://t.me/tempro_news"
+  },
+  "youtube": "https://youtube.com/@temprobot",
+  "tiktok": "https://tiktok.com/@temprobot",
+  "facebook": "https://facebook.com/temprobot",
+  "instagram": "https://instagram.com/temprobot",
+  "twitter": "https://twitter.com/temprobot",
+  "github": "https://github.com/master-pd/tempro",
+  "website": "https://temprobot.xyz",
+  "donation": "https://buymeacoffee.com/tempro",
+  "privacy_policy": "https://temprobot.xyz/privacy",
+  "terms_of_service": "https://temprobot.xyz/terms",
+  "contact_email": "support@temprobot.xyz",
+  "main_buttons": [
+    {
+      "text": "📢 Updates Channel",
+      "url": "https://t.me/tempro_updates"
+    },
+    {
+      "text": "👥 Support Group",
+      "url": "https://t.me/tempro_support"
+    },
+    {
+      "text": "👑 Owner Profile",
+      "url": "https://t.me/tempro_owner"
+    },
+    {
+      "text": "🎥 YouTube",
+      "url": "https://youtube.com/@temprobot"
+    },
+    {
+      "text": "📱 TikTok",
+      "url": "https://tiktok.com/@temprobot"
+    },
+    {
+      "text": "💻 GitHub",
+      "url": "https://github.com/master-pd/tempro"
+    }
+  ]
+}

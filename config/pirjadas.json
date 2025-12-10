@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "user_id": 111222333,
+      "username": "@pirjada_user",
+      "added_by": 123456789,
+      "added_at": "2024-01-01T12:00:00",
+      "expiry_date": "2024-02-01T12:00:00",
+      "max_bots": 3,
+      "created_bots": 1,
+      "is_active": true,
+      "permissions": {
+        "create_bots": true,
+        "custom_menu": true,
+        "channel_verification": true,
+        "basic_stats": true,
+        "email_creation": true
+      },
+      "settings": {
+        "custom_welcome": "Welcome to my bot!",
+        "channel_id": -1001234567890,
+        "menu_style": "basic"
+      }
+    }
+  ],
+  "settings": {
+    "enabled": true,
+    "default_expiry_days": 30,
+    "max_bots_per_user": 3,
+    "bot_expiry_days": 30,
+    "features": ["create_bot", "custom_menu", "single_channel", "email_generation"],
+    "restrictions": {
+      "max_emails_per_user": 10,
+      "max_users_per_bot": 1000,
+      "rate_limit": 5
+    },
+    "pricing": {
+      "monthly": 5.00,
+      "quarterly": 12.00,
+      "yearly": 40.00,
+      "lifetime": 100.00
+    }
+  },
+  "statistics": {
+    "total_pirjadas": 1,
+    "active_pirjadas": 1,
+    "total_bots_created": 1,
+    "revenue_total": 0.00
+  }
+}

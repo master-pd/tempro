@@ -1,0 +1,37 @@
+{
+  "required_channels": [
+    {
+      "id": -1001234567890,
+      "username": "@tempro_updates",
+      "name": "Tempro Updates",
+      "description": "সব আপডেট পেতে এই চ্যানেলে জয়েন করুন",
+      "required": true,
+      "check_interval": 300
+    },
+    {
+      "id": -1001234567891,
+      "username": "@tempro_support",
+      "name": "Tempro Support",
+      "description": "সাপোর্ট এবং হেল্পের জন্য জয়েন করুন",
+      "required": true,
+      "check_interval": 300
+    }
+  ],
+  "verification_enabled": true,
+  "check_interval": 300,
+  "welcome_channels": [
+    {
+      "id": -1001234567892,
+      "username": "@tempro_welcome",
+      "name": "Tempro Welcome",
+      "description": "নতুন ইউজারদের জন্য ওয়েলকাম চ্যানেল"
+    }
+  ],
+  "settings": {
+    "force_subscription": true,
+    "show_join_button": true,
+    "allow_skip": false,
+    "max_channels": 3,
+    "verification_timeout": 60
+  }
+}
