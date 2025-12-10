@@ -145,29 +145,6 @@ def get_file_size(path: str) -> str:
         size /= 1024
     return f"{size:.1f} TB"
 
-def check_for_updates():
-    """Check for updates on GitHub"""
-    try:
-        import requests
-        repo_url = "https://api.github.com/repos/master-pd/tempro/releases/latest"
-        response = requests.get(repo_url, timeout=5)
-        
-        if response.status_code == 200:
-            latest_version = response.json().get('tag_name', 'v1.0.0')
-            current_version = "v3.1.0"  # From main.py
-            
-            if latest_version > current_version:
-                return {
-                    "update_available": True,
-                    "latest_version": latest_version,
-                    "current_version": current_version,
-                    "url": "https://github.com/master-pd/tempro/releases/latest"
-                }
-        
-        return {"update_available": False}
-    except:
-        return {"update_available": False}
-
 def create_backup():
     """Create backup of important files"""
     import shutil
