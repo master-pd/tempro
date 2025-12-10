@@ -1,18 +1,5 @@
 # 🌟 Tempro Pro Bot v4.0.0
 
-<div align="center">
-
-![Tempro Bot](https://img.shields.io/badge/Tempro-Pro_Bot_4.0-blueviolet)
-![Python](https://img.shields.io/badge/Python-3.8+-blue)
-![Telegram](https://img.shields.io/badge/Telegram-Bot-2CA5E0)
-![License](https://img.shields.io/badge/License-MIT-green)
-![API](https://img.shields.io/badge/API-1secmail.com-orange)
-
-**সম্পূর্ণ প্রফেশনাল টেম্পোরারি ইমেইল টেলিগ্রাম বট**  
-*বাংলা ইউজার ইন্টারফেস - ইংলিশ টার্মিনাল - ডুয়াল মোড সিস্টেম*
-
-</div>
-
 
 <div align="center">
 
@@ -21,6 +8,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![Telegram](https://img.shields.io/badge/Telegram-Bot-2CA5E0)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![API](https://img.shields.io/badge/API-1secmail.com-orange)
 
 ![GitHub](https://img.shields.io/github/license/master-pd/tempro)
 ![GitHub last commit](https://img.shields.io/github/last-commit/master-pd/tempro)
@@ -102,7 +90,7 @@
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/yourusername/tempro-bot.git
+git clone https://github.com/master-pd/tempro.git
 cd tempro-bot
 
 # 2. Run installation script
